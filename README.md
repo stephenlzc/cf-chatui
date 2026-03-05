@@ -67,11 +67,8 @@ cd cf-chatui
 # 2. 安装依赖
 npm install
 
-# 3. 配置环境变量
-# 复制示例文件
-wrangler.toml.example wrangler.toml
-
-# 4. 设置 Secrets (推荐方式)
+# 3. 设置 Secrets (推荐方式)
+# 注意: wrangler.toml 已包含在仓库中，无需额外配置
 wrangler secret put CF_ACCOUNT_ID
 # 输入您的 Cloudflare 账户 ID
 
@@ -84,7 +81,7 @@ wrangler secret put AUTH_PASSWORD
 wrangler secret put SESSION_SECRET
 # 输入随机生成的密钥 (可使用: openssl rand -base64 32)
 
-# 5. 部署
+# 4. 部署
 wrangler deploy
 ```
 
@@ -166,6 +163,7 @@ wrangler tail
 cf-chatui/
 ├── src/
 │   └── index.ts          # 主入口 (Worker + 前端)
+├── wrangler.toml         # Cloudflare Workers 配置
 ├── .wrangler.toml.example # 配置文件模板
 ├── .dev.vars.example     # 本地环境变量模板
 ├── .gitignore
