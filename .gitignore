@@ -7,8 +7,8 @@ pnpm-lock.yaml
 # Wrangler
 .dev.vars
 .wrangler/
-wrangler.toml
-!wrangler.toml.example
+# Note: wrangler.toml is now tracked in git (no sensitive data)
+# .wrangler.toml.example is kept for reference
 
 # Build output
 dist/
