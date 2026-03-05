@@ -1,8 +1,12 @@
 # 🤖 CF ChatUI
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/stephenlzc/cf-chatui)
+[![Workers AI](https://img.shields.io/badge/Powered%20by-Workers%20AI-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/workers-ai/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
-基于 [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) 的多功能 AI 对话 Web 界面，支持文本对话、图像生成和文本嵌入。
+> 🎯 **零门槛使用大模型** - 无需部署服务器，无需申请 API Key，直接调用 [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) 的免费/付费模型
+
+CF ChatUI 是一个基于 **Cloudflare Workers AI** 的多功能 AI 对话 Web 界面，让您在几分钟内即可搭建自己的 AI 聊天平台。支持文本对话、图像生成和文本嵌入，所有计算都在 Cloudflare 边缘节点完成。
 
 <!-- 截图占位符 - 上传 screenshot.png 后解除注释
 ![CF ChatUI Screenshot](https://raw.githubusercontent.com/stephenlzc/cf-chatui/main/screenshot.png)
@@ -10,13 +14,46 @@
 
 ## ✨ 功能特性
 
+### 🤖 AI 模型支持
+- 💬 **多模型对话** - GLM-4.7-Flash、GPT-OSS-120B 等
+- 🎨 **AI 图像生成** - FLUX.2 Dev 高质量图像创作
+- 📊 **文本嵌入** - Plamo Embedding 向量化处理
+
+### 🛠️ 平台特性
 - 🔐 **安全认证** - JWT 身份验证，保护您的 AI 服务
-- 💬 **多模型对话** - 支持 GLM-4.7-Flash、GPT-OSS-120B 等对话模型
-- 🎨 **AI 图像生成** - 集成 FLUX.2 Dev 高质量图像生成
-- 📊 **文本嵌入** - Plamo Embedding 文本向量化
 - 🌓 **深色主题** - 现代化的 ChatGPT 风格界面
 - 📱 **响应式设计** - 适配桌面和移动设备
-- ⚡ **极速部署** - 基于 Cloudflare Workers 边缘计算
+- ⚡ **边缘计算** - 基于 Cloudflare Workers 全球部署
+- 🆓 **零运维成本** - 无需管理服务器，按需付费
+
+### 🔧 可配置性
+本项目采用高度模块化设计，未来版本将支持更多自定义配置：
+- 自定义系统提示词
+- 模型参数调整（temperature、max_tokens 等）
+- 主题和皮肤定制
+- 插件扩展系统
+- 多用户角色管理
+- API 速率限制配置
+- 更多 AI 模型接入
+
+## 🌟 为什么选择 CF ChatUI？
+
+### vs 传统 AI API 方案
+
+| 特性 | OpenAI/Claude API | **CF ChatUI + Workers AI** |
+|------|-------------------|---------------------------|
+| API Key 申请 | ❌ 需要信用卡，审核严格 | ✅ 无需申请，即开即用 |
+| 服务器部署 | ❌ 需要 VPS/云服务器 | ✅ 纯 Serverless，零运维 |
+| 全球访问速度 | ⚠️ 依赖服务器位置 | ✅ Cloudflare 全球边缘节点 |
+| 成本 | 💰 按量付费，可能较高 | 🆓 免费额度 + 低价按量 |
+| 隐私安全 | ⚠️ 数据发送到第三方 | ✅ 数据在 Cloudflare 边缘处理 |
+
+### 谁适合使用？
+
+- 👨‍💻 **开发者** - 快速搭建 AI 演示或原型
+- 🏢 **小团队** - 无需 DevOps 的 AI 解决方案
+- 🎓 **学习者** - 零成本体验大模型能力
+- 🔒 **隐私敏感用户** - 数据不经过第三方服务
 
 ## 🚀 快速开始
 
@@ -172,6 +209,18 @@ cf-chatui/
 └── README.md
 ```
 
+## 💰 Workers AI 定价
+
+Cloudflare Workers AI 提供**免费额度**，对于个人使用通常足够：
+
+| 模型类型 | 免费额度 | 超出后价格 |
+|---------|---------|-----------|
+| 文本生成 (GLM/GPT) | 每天 10,000 次请求 | $0.001-0.003 / 1K tokens |
+| 图像生成 (FLUX) | 每天 100 张 | $0.02-0.05 / 张 |
+| 文本嵌入 | 每天 100,000 次 | $0.0001 / 1K tokens |
+
+> 📌 **提示**: 免费额度每日重置，足够个人日常使用。查看 [官方定价](https://developers.cloudflare.com/workers-ai/pricing/) 获取最新信息。
+
 ## 🔒 安全建议
 
 1. **更改默认密码** - 部署后立即修改 `AUTH_PASSWORD`
@@ -187,12 +236,23 @@ cf-chatui/
 
 ## 🗺️ 路线图
 
+### 近期计划 (v1.x)
 - [ ] 📝 **聊天记录持久化** - 支持查看历史对话
 - [ ] 💾 **本地存储** - 浏览器本地缓存对话
-- [ ] 🌐 **多语言支持** - 界面国际化
+- [ ] 🎨 **主题系统** - 可自定义界面颜色和风格
+- [ ] ⚙️ **模型参数配置** - 调整 temperature、max_tokens 等
+
+### 中期计划 (v2.x)
+- [ ] 🌐 **多语言支持** - 界面国际化 (i18n)
 - [ ] 🔑 **多用户支持** - 用户管理和权限控制
-- [ ] 📤 **文件上传** - 支持文档和图片上传
-- [ ] ⚙️ **更多模型** - 集成更多 Workers AI 模型
+- [ ] 🧩 **插件系统** - 支持自定义扩展
+- [ ] 📤 **文件上传** - 支持文档和图片上传分析
+- [ ] 🤖 **更多模型** - 集成更多 Workers AI 模型
+
+### 长期愿景
+- [ ] 🏗️ **可视化配置器** - 无需代码即可定制功能
+- [ ] 🔌 **API 网关** - 统一的 AI 模型接入层
+- [ ] 📊 **使用分析** - 用量统计和成本监控
 
 ## 🤝 贡献
 
