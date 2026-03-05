@@ -1,10 +1,12 @@
 # 🤖 CF ChatUI
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/yourusername/cf-chatui)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/stephenlzc/cf-chatui)
 
 基于 [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) 的多功能 AI 对话 Web 界面，支持文本对话、图像生成和文本嵌入。
 
-![CF ChatUI Screenshot](https://raw.githubusercontent.com/yourusername/cf-chatui/main/screenshot.png)
+<!-- 截图占位符 - 上传 screenshot.png 后解除注释
+![CF ChatUI Screenshot](https://raw.githubusercontent.com/stephenlzc/cf-chatui/main/screenshot.png)
+-->
 
 ## ✨ 功能特性
 
@@ -59,7 +61,7 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/cf-chatui.git
+git clone https://github.com/stephenlzc/cf-chatui.git
 cd cf-chatui
 
 # 2. 安装依赖

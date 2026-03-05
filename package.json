@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/cf-chatui.git"
+    "url": "git+https://github.com/stephenlzc/cf-chatui.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/cf-chatui/issues"
+    "url": "https://github.com/stephenlzc/cf-chatui/issues"
   },
-  "homepage": "https://github.com/yourusername/cf-chatui#readme",
+  "homepage": "https://github.com/stephenlzc/cf-chatui#readme",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240101.0",
     "typescript": "^5.9.3"
