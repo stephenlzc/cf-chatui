@@ -210,17 +210,45 @@ cf-chatui/
 
 ## 🙏 致谢
 
-本项目由 **[Kimi K2.5](https://kimi.moonshot.cn)** 协助开发。
+<p align="center">
+  <b>本项目由 <a href="https://kimi.moonshot.cn"><img src="https://img.shields.io/badge/Built%20with-Kimi%20K2.5-FF6B6B?style=for-the-badge&logo=openai&logoColor=white" alt="Kimi K2.5" height="28"></a> 协助开发</b>
+</p>
 
-特别感谢:
-- [Moonshot AI](https://www.moonshot.cn/) - Kimi 大语言模型
-  - [GitHub](https://github.com/MoonshotAI)
-  - [HuggingFace](https://huggingface.co/moonshotai)
-- [Cloudflare](https://www.cloudflare.com/) - Workers 和 Workers AI 平台
-- [Tailwind CSS](https://tailwindcss.com/) - 优秀的 CSS 框架
+### 特别感谢
+
+<table align="center">
+  <tr>
+    <td align="center" width="200">
+      <a href="https://www.moonshot.cn/">
+        <img src="https://img.shields.io/badge/Moonshot%20AI-Kimi%20大模型-8B5CF6?style=flat-square&logo=openai&logoColor=white" alt="Moonshot AI" height="24">
+      </a>
+      <br>
+      <sub>
+        <a href="https://github.com/MoonshotAI"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" height="16"></a>
+        <a href="https://huggingface.co/moonshotai"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" height="16"></a>
+      </sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://www.cloudflare.com/">
+        <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" height="24">
+      </a>
+      <br>
+      <sub>Workers & Workers AI 平台</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://tailwindcss.com/">
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" height="24">
+      </a>
+      <br>
+      <sub>优秀的 CSS 框架</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <p align="center">
-  Made with ❤️ using <a href="https://kimi.moonshot.cn">Kimi K2.5</a> and <a href="https://workers.cloudflare.com">Cloudflare Workers</a>
+  <img src="https://img.shields.io/badge/Made%20with-❤️-ff69b4?style=for-the-badge" alt="Made with love">
+  <br><br>
+  <sub>Powered by <a href="https://kimi.moonshot.cn">Kimi K2.5</a> × <a href="https://workers.cloudflare.com">Cloudflare Workers</a></sub>
 </p>
